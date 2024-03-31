@@ -2,7 +2,7 @@ import React from 'react';
 
 const DraggableItem = ({ type, children }) => {
   const handleDragStart = (event) => {
-    event.dataTransfer.setData('text', JSON.stringify({ type }));
+    event.dataTransfer.setData('text/plain', type);
   };
 
   return (

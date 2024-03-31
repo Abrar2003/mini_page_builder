@@ -7,12 +7,30 @@
 
 .sidebar {
   width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 20px;
   background-color: #2D2D2D;
   height: 100vh;
   position: fixed;
+  padding: 20px;
+  box-sizing: border-box;
   z-index: 10;
   right: 0;
+}
+
+.exportButton {
+  padding: 10px;
+  border: none;
+  background-color: #1348BA;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  width: 40%;
+  border-radius: 5px;
+  margin: 30px 60%;
+  
 }
 
 input{
