@@ -1,13 +1,13 @@
 // ConfigModal.js
 import React, { useState } from "react";
 
-const ConfigModal = ({ onClose, onSave, x, y, type }) => {
+const ConfigModal = ({ onClose, onSave, x, y, type, text, fontSize, fontWeight }) => {
   const [config, setConfig] = useState({
     x,
     y,
-    text: "",
-    fontSize: "",
-    fontWeight: "",
+    text: text,
+    fontSize: fontSize,
+    fontWeight: fontWeight,
   });
 
   const handleChange = (event) => {

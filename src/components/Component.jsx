@@ -71,6 +71,9 @@ const Component = ({ id, type, x, y, text, fontSize, fontWeight, handleDelete, c
         <ConfigModal
           x={x}
           y={y}
+          text={text}
+          fontSize={fontSize}
+          fontWeight={fontWeight}
           type={type}
           onClose={handleCloseModal}
           onSave={handleUpdate}
