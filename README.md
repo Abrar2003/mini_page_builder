@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+## Mini Page Builder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Overview
+This project is a simple React application that allows users to create, drag, and drop components onto a canvas. Users can interact with the components by clicking on them to select, dragging them to reposition, and configuring their properties through a modal interface.
 
-## Available Scripts
+### Features
+1. **Component Creation**: Users can create components by dragging them from the sidebar onto the canvas. The available components include Label, Input, and Button.
+2. **Drag-and-Drop**: Components on the canvas can be dragged and dropped to change their position.
+3. **Component Selection**: Clicking on a component on the canvas selects it, displaying a red border around the selected component.
+4. **Configuration Modal**: Users can configure the properties of a selected component by pressing Enter after selecting it. This action opens a modal where users can modify properties such as text, font size, and font weight.
+5. **Automatic Persistence**: All changes made to components, including creation, deletion, repositioning, and configuration, are automatically saved to local storage, ensuring persistence across page reloads.
 
-In the project directory, you can run:
+### How to Run Locally
+To run this project locally, follow these steps:
+1. Clone the repository to your local machine.
+2. Navigate to the project directory in your terminal.
+3. Install dependencies by running `npm install`.
+4. Start the development server by running `npm start`.
+5. Open your web browser and go to `http://localhost:3000` to view the application.
 
-### `npm start`
+### Project Structure
+- **src/components**: Contains the React components used in the project.
+  - `Component.js`: Defines the individual components (Label, Input, Button) and their behavior.
+  - `ConfigModal.js`: Implements the configuration modal for modifying component properties.
+  - `Canvas.js`: Implements the canvas where components are rendered and interacted with.
+- **src**: Contains the main application files.
+  - `App.js`: Main application component that renders the Canvas component.
+- **public**: Contains static assets and the `index.html` file.
+- **package.json**: Manages project dependencies and scripts.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Technologies Used
+- React: Front-end JavaScript library for building user interfaces.
+- HTML/CSS: Markup and styling languages for structuring and styling the application.
+- localStorage: Web storage API used for persistent data storage.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Dependencies
+- `react`: JavaScript library for building user interfaces.
+- `react-dom`: Provides DOM-specific methods for React components.
+- `uuid`: Library for generating unique IDs.
