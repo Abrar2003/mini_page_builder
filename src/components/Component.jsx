@@ -33,8 +33,8 @@ const Component = ({ id, type, x, y, text, fontSize, fontWeight, handleDelete, c
     const updatedComponent = {
       id,
       type,
-      x,
-      y,
+      x:Number(config.x),
+      y: Number(config.y),
       text: config.text,
       fontSize: config.fontSize,
       fontWeight: config.fontWeight
@@ -52,7 +52,7 @@ const Component = ({ id, type, x, y, text, fontSize, fontWeight, handleDelete, c
 
   return (
     <div
-      onClick={() => {setIsSelected(!isSelected); console.log("clicked")}}
+      onClick={() => setIsSelected(!isSelected)}
       style={{
         position: "absolute",
         left: x,
